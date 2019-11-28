@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewActivity"
+    android:orientation="vertical"
+    android:background="#afcae0"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90c0e8">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/ic_add_box_black_24dp"/>
+                <TextView
+                    android:id="@+id/patient1"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ms. Kalpita Thankur"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="15dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/review1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Was on ward 7 the care i recieved by everyone was first class doctors nurses caterers could find no faults many thanks and kind regards sheila ward bed 3"
+            android:background="@drawable/bg_edit"
+            android:gravity="top"
+            android:maxLines="20"
+            />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#20202e"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/drname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:text="Mr.Ramalingam Ghosh"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/drtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:text="Skin Specialist"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_tv"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:hint="Timely Doctor Visit"/>
+        <ImageButton
+            android:id="@+id/timelyDr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/foodView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_tv"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:hint="Food Quality"/>
+            <ImageButton
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bloodView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_tv"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:hint="Blood Bank"/>
+            <ImageButton
+                android:id="@+id/blood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/staffView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_tv"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:hint="Staff Behaviour"/>
+        <ImageButton
+            android:id="@+id/staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
